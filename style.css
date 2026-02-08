@@ -1,0 +1,124 @@
+/* general */
+
+body {
+    font-family: monospace;
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+    background-color: #e3f974;
+}
+
+.credits {
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(27, 160, 27);
+}
+
+a {
+    color: rgb(27, 160, 27);
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+button, .button {
+    margin: auto;
+    width: fit-content;
+    padding: 15px 20px;
+    color: white;
+    background-color: rgb(75, 177, 23);
+    border: none;
+    border-radius: 25px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover, .button:hover {
+    background-color: rgb(27, 160, 27);
+    cursor: pointer;
+}
+
+.home-icon img {
+    max-width: 50px;
+    width: 10%;
+    padding-bottom: 10px;
+    border-style: none;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.menu > * {
+    margin-top: 10px;
+}
+
+/* start page */
+
+#start {
+    padding-top: 20px;
+}
+
+/* test page */
+
+#test img {
+    outline: 2px solid #4e5078;
+    border-radius: 1%;
+}
+
+#choices, #question {
+    width: 50%;
+    min-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#question {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.choice {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+
+/* results page */
+
+#results img {
+    padding: 10px 0px;
+}
+
+
+/* profiles page */
+
+#gallery {
+    margin: auto;
+    padding-top: 20px;
+
+    /* flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.profile {
+    width: fit-content;
+    height: fit-content;
+}
+
+.profile img {
+    max-height: 500px;
+}
+
+.caption {
+    color: rgb(27, 160, 27);
+}

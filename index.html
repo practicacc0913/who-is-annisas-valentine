@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LLQ3459GG"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/truck.png">
+    <title>what vehicle are you?</title>
+</head>
+
+<body>
+    <!-- start page -->
+    <div id="start">
+        <a class="home-icon" href="index.html"><img src="img/truck.png" alt="go to home page"></a>
+        <br>
+        <img id="start-img" src="img/start.png" alt="landing page image">
+        <div class="credits">
+            <p>made by <a href="https://instagram.com/duoduo.draws">elaine</a>, <a href="https://www.instagram.com/milkglueglxy">tanya</a>, and <a href="https://www.instagram.com/lu_elyu/">lu</a> (EAT)</p>
+        </div>
+        <div class="menu">
+            <h1>what vehicle are you?</h1>
+            <button onclick="startTest()">let's find out!</button>
+            <div class="button"><a href="profiles.html">see all personality types</a></div>
+        </div>
+    </div>
+
+    <!-- test question page -->
+    <div id="test" hidden>
+        <img id="story-image">
+        <p id="question"></p>
+        <div id="choices"></div>
+    </div>
+
+    <!-- results page -->
+    <div id="results" hidden>
+        <a class="home-icon" href="index.html"><img src="img/truck.png" alt="go to home page"></a>
+        <p id="results-text"></p>
+        <img id="personality">
+        <p>credits: 👾 <a href="https://instagram.com/duoduo.draws">elaine</a> / 🎨 <a href="https://www.instagram.com/milkglueglxy">tanya</a>, <a href="https://instagram.com/duoduo.draws">elaine</a> / 🖋️ <a href="https://instagram.com/duoduo.draws">elaine</a> / 🪪 <a href="https://www.instagram.com/lu_elyu/">lu</a> </p>
+        <div class="menu">
+            <div class="button"><a href="profiles.html">see all personality types!</a></div>
+            <button onclick="reset()">again >:)</button>
+        </div>
+    </div>
+</body>
