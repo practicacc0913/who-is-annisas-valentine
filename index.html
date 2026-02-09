@@ -3,23 +3,16 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LLQ3459GG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-8LLQ3459GG');
-    </script>
-    
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/truck.png">
     <title>what vehicle are you?</title>
     
     <style>
-        /* Simple styling to make the password gate look nice */
         #password-gate {
             text-align: center;
             margin-top: 100px;
             font-family: sans-serif;
+            display: block; /* Ensures it shows first */
         }
         #password-input {
             padding: 10px;
@@ -42,13 +35,12 @@
 
     <div id="password-gate">
         <h1>💌 Enter the secret password 💌</h1>
-        <input type="password" id="password-input" placeholder="hint: it's romantic">
+        <input type="password" id="password-input" placeholder="hint: it's valentine">
         <button class="unlock-btn" onclick="checkPassword()">unlock</button>
         <p id="error-message" style="color: red;"></p>
     </div>
 
     <div id="site-content" style="display: none;">
-        
         <div id="start">
             <a class="home-icon" href="index.html"><img src="img/truck.png" alt="go to home page"></a>
             <br>
@@ -72,4 +64,34 @@
         <div id="results" hidden>
             <a class="home-icon" href="index.html"><img src="img/truck.png" alt="go to home page"></a>
             <p id="results-text"></p>
-            <img
+            <img id="personality">
+            <div class="menu">
+                <div class="button"><a href="profiles.html">see all personality types!</a></div>
+                <button onclick="reset()">again >:)</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Internal password logic to ensure it works!
+        function checkPassword() {
+            const passInput = document.getElementById('password-input').value.toLowerCase();
+            const gate = document.getElementById('password-gate');
+            const content = document.getElementById('site-content');
+            const error = document.getElementById('error-message');
+
+            if (passInput === 'valentine') {
+                gate.style.setProperty('display', 'none', 'important');
+                content.style.setProperty('display', 'block', 'important');
+                console.log("Success! Content shown.");
+            } else {
+                error.innerText = "Incorrect! Try again ❤️";
+            }
+        }
+    </script>
+    
+    <script src="js/test.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
