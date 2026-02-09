@@ -34,8 +34,8 @@
 <body>
 
     <div id="password-gate">
-        <h1>💌 e Enter the secret password 💌</h1>
-        <input type="password" id="password-input" placeholder="hint: it's valentine">
+        <h1>💌 Enter the secret password 💌</h1>
+        <input type="password" id="password-input" placeholder="hint: your nicknaa,e">
         <button class="unlock-btn" onclick="checkPassword()">unlock</button>
         <p id="error-message" style="color: red;"></p>
     </div>
@@ -80,12 +80,12 @@
             const content = document.getElementById('site-content');
             const error = document.getElementById('error-message');
 
-            if (passInput === 'valentine') {
+            if (passInput === 'piggy') {
                 gate.style.setProperty('display', 'none', 'important');
                 content.style.setProperty('display', 'block', 'important');
                 console.log("Success! Content shown.");
             } else {
-                error.innerText = "Incorrect! Try again ❤️";
+                error.innerText = "Incorrect! Try again piggy ❤️";
             }
         }
     </script>
