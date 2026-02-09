@@ -9,6 +9,38 @@
     <link rel="icon" type="image/x-icon" href="img/truck.png">
     <title>what vehicle are you?</title>
 </head>
+<body>
+
+<div id="password-gate">
+    <h1>💌 Enter the secret password 💌</h1>
+    <input type="password" id="password-input" placeholder="hint: it's romantic">
+    <button onclick="checkPassword()">unlock</button>
+    <p id="error-message" style="color: red;"></p>
+</div>
+
+<div id="site-content" hidden>
+    <!-- EVERYTHING ELSE GOES HERE -->
+
+    <!-- start page -->
+    <div id="start">
+        ...
+    </div>
+
+    <div id="test" hidden>
+        ...
+    </div>
+
+    <div id="results" hidden>
+        ...
+    </div>
+
+</div>
+
+<script src="js/password.js"></script>
+<script src="js/test.js"></script>
+<script src="js/index.js"></script>
+
+</body>
 
 <body>
     <!-- start page -->
