@@ -1,18 +1,14 @@
-const CORRECT_PASSWORD = "iloveyou"; // change this ❤️
-
 function checkPassword() {
-    const input = document.getElementById("password-input").value;
-    const error = document.getElementById("error-message");
+    const password = document.getElementById('password-input').value;
+    const errorMessage = document.getElementById('error-message');
+    const gate = document.getElementById('password-gate');
+    const content = document.getElementById('site-content');
 
-    if (input === CORRECT_PASSWORD) {
-        document.getElementById("password-gate").style.display = "none";
-        document.getElementById("site-content").removeAttribute("hidden");
+    // Change 'valentine' to whatever password you want!
+    if (password.toLowerCase() === 'valentine') {
+        gate.style.display = 'none';    // Hide the password box
+        content.style.display = 'block'; // Show the quiz
     } else {
-        error.textContent = "wrong password 👀 try again";
+        errorMessage.innerText = "Incorrect! Try again ❤️";
     }
 }
-document.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-        checkPassword();
-    }
-});
